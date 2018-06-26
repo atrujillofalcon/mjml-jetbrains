@@ -10,11 +10,13 @@ buildscript {
 }
 
 plugins {
+    id 'net.researchgate.release' version '2.6.0'
+    id "com.jfrog.bintray" version "1.8.1"
     id 'org.jetbrains.intellij' version '0.3.4'
 }
 
 group 'es.atrujillo.mjml'
-version '1.0-SNAPSHOT'
+version project.property('version')
 
 apply plugin: 'kotlin'
 apply plugin: 'idea'
