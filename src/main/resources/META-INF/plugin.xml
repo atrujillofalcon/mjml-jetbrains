@@ -19,5 +19,10 @@
 
     <actions>
         <!-- Add your actions here -->
+        <group id="MjmlPlugin.HelloMenu" text="Greeting" description="Greeting menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action class="es.atrujillo.mjml.jetbrains.action.HelloAction" id="MjmlPlugin.Textboxes" text="Hello"
+                    description="Say hello mjml"/>
+        </group>
     </actions>
 </idea-plugin>
